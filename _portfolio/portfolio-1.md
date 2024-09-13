@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Sliding Window and Discounted Upper Confidence Bound (UCB)"
+excerpt: "Implementation of Sliding-Window UCB and Discounted UCB. <img src="/images/results_cb.png">"
 collection: portfolio
 ---
 

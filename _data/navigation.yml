@@ -5,25 +5,26 @@
 # prevent it from being included in the site.
 
 main:
+  - title: "CV"
+    # url: /cv/
+    url: /files/CV.pdf
+
+
   - title: "Publications"
     # url: /publications/
     url: https://scholar.google.com/citations?user=GozNljUAAAAJ&hl=en
+
+  - title: "Portfolio"
+    url: /portfolio/
 
   # - title: "Talks"
   #   url: /talks/    
 
   # - title: "Teaching"
   #   url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
         
   # - title: "Blog Posts"
   #   url: /year-archive/
     
-  - title: "CV"
-    # url: /cv/
-    url: /files/CV.pdf
-    
   # - title: "Guide"
-  #   url: /markdown/
+  #   url: /markdown/ 
