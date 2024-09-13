@@ -7,27 +7,24 @@ header:
 collection: portfolio
 ---
 
-# Upper Confidence Bound (UCB) Algorithms
-
-This project implements two variants of the Upper Confidence Bound algorithm:
-
-1. Sliding-Window UCB
-2. Discounted UCB
-
 ## Overview
 
-[Provide a brief description of the UCB algorithm and its variants]
+The Upper Confidence Bound (UCB) algorithm is a popular approach in the multi-armed bandit problem, balancing exploration and exploitation. This project implements two variants:
 
-## Implementation Details
+1. Sliding-Window UCB: Adapts to non-stationary environments by considering only recent observations within a fixed window.
+2. Discounted UCB: Gives more weight to recent observations, allowing for adaptation to changing reward distributions.
 
-[Explain key aspects of your implementation]
+These implementations serve as baselines for comparing our custom algorithm's performance in stochastic dynamic environments.
+
+
+For the complete implementation and detailed code, please refer to this [Kaggle notebook](https://www.kaggle.com/code/mohammedabdulkadir88/sliding-window-discounted-linucb).
 
 ## Results
 
 ![UCB Results](/images/results_cb.png)
 
-[Describe the results shown in the image]
+The image shows the cumulative regret over time for both UCB variants compared to a standard UCB algorithm. 
 
-## Conclusion
-
-[Summarize the findings and potential applications]
+- **Sliding-Window UCB adapts faster to abrupt changes in reward distributions.**
+- **Discounted UCB shows smoother adaptation to gradual changes.**
+- **Both variants outperform standard UCB in non-stationary environments.**
