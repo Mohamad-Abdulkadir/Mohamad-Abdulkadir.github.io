@@ -3,7 +3,7 @@ title: "UCB (Upper Confidence Bound)"
 excerpt: "Implementation of Sliding-Window UCB and Discounted UCB."
 header:
   image: /images/results_cb.png
-  teaser: /images/results_cb.png
+  # teaser: /images/results_cb.png
 collection: portfolio
 ---
 
