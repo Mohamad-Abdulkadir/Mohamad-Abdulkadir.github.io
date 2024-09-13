@@ -14,10 +14,13 @@ The Upper Confidence Bound (UCB) algorithm is a popular approach in the multi-ar
 1. Sliding-Window UCB: Adapts to non-stationary environments by considering only recent observations within a fixed window.
 2. Discounted UCB: Gives more weight to recent observations, allowing for adaptation to changing reward distributions.
 
+Both algorithms were introduced in this paper [Weighted Linear Bandits for Non-Stationary
+Environments](https://arxiv.org/pdf/1909.09146).
+
 These implementations serve as baselines for comparing our custom algorithm's performance in stochastic dynamic environments.
 
 
-For the complete implementation and detailed code, please refer to this [Kaggle notebook](https://www.kaggle.com/code/mohammedabdulkadir88/sliding-window-discounted-linucb).
+The complete implementation and detailed code is in this [Kaggle notebook](https://www.kaggle.com/code/mohammedabdulkadir88/sliding-window-discounted-linucb).
 
 ## Results
 
