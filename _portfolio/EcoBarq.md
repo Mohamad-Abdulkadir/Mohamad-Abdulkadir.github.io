@@ -13,7 +13,7 @@ collection: portfolio
 - Electrical Engineering
 - Computer Science
 
-![EcoBarq Car Design](/images/design.png)
+[EcoBarq Car Design](/images/design.png)
 
 ## Shell Eco-marathon Overview
 
