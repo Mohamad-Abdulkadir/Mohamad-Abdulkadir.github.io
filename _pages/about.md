@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-![AI-generated image based on everything ChatGPT knows about me](/images/F.png){: .align-right width="300px"}
+![AI-generated image based on everything ChatGPT knows about me](/images/F.png){: .align-right width="200px"}
 👨‍💻 I'm a final year undergraduate computer science student at United Arab Emirates University.
 
 Currently, I'm working on research projects about mobile crowdsensing and recommender systems as well as completing the last semester of my undergraduate degree.
