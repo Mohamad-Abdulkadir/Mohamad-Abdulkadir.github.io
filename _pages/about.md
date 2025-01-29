@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <!-- ![AI-generated image based on everything ChatGPT knows about me](/images/F.png){: .align-right width="200px"} -->
-👨‍💻 I am a final-year computer science undergraduate at United Arab Emirates University (UAEU), currently interning at e&.
+👨‍💻 I am a final-year computer science undergraduate at UAEU, currently interning at e&.
 
 <!-- # Experience Overview -->
 
