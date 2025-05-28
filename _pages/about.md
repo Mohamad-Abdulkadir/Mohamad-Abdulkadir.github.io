@@ -11,7 +11,7 @@ redirect_from:
 
 # 💻 Professional Experience
 -   **Intern @ ADIA Lab** 
-    *   Currently working on a project titled "Analyzing the Role of Foundation Models in Clinical Decision Support".
+    *   Working on a project titled "Analyzing the Role of Foundation Models in Clinical Decision Support".
 -   **Trainee @ e&** 
     *   Contributed to integrating an AI-powered content recommendation tool with the Starz On Business platform.
     *   Developed a bespoke chatbot for Starz On Business to automate tier-1 customer support cases using the platform's guides and FAQs.
