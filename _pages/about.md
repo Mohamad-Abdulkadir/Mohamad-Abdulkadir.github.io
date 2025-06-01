@@ -10,9 +10,9 @@ redirect_from:
 👨‍💻 I am a recent Computer Science graduate from the United Arab Emirates University, passionate about AI and machine learning.
 
 # 💻 Professional Experience
--   **Intern @ ADIA Lab** 
+-   **ML Research Intern @ ADIA Lab** 
     *   Working on a project titled "Analyzing the Role of Foundation Models in Clinical Decision Support".
--   **Trainee @ e&** 
+-   **AI Intern @ e&** 
     *   Contributed to integrating an AI-powered content recommendation tool with the Starz On Business platform.
     *   Developed a bespoke chatbot for Starz On Business to automate tier-1 customer support cases using the platform's guides and FAQs.
 
