@@ -4,8 +4,6 @@ excerpt: "Bandit Lab is a web-based simulator that visualizes how different band
 collection: portfolio
 ---
 
-# Bandit Lab
-
 [BanditLab](https://mohamad-abdulkadir.github.io/BanditLab/) is a web-based simulator that visualizes how different bandit algorithms tackle the exploration-exploitation tradeoff. 
 
 ## Algorithms
