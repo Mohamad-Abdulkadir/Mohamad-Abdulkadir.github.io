@@ -13,8 +13,6 @@ I work across the AI and data lifecycle, from preparing and transforming data to
 
 I hold a BSc in Computer Science from United Arab Emirates University, where I graduated with a 3.97/4.00 GPA.
 
-[View projects](/portfolio/) | [Resume](/files/CV.pdf) | [GitHub](https://github.com/Mohamad-Abdulkadir) | [LinkedIn](https://www.linkedin.com/in/mohamad-abdulkadir-480696213/)
-
 ## Experience
 
 **Mansoura | Software Engineer, Data & AI**  
