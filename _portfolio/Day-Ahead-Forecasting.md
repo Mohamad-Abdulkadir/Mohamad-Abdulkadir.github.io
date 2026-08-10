@@ -95,12 +95,6 @@ The block-level calibration on the held-out hourly forecast was:
 
 On the held-out prompt-period check, all selected weekly and monthly averages landed inside the MAE bands. Monthly baseload MAE was 2.10 EUR/MWh, monthly peak MAE was 5.40 EUR/MWh, and monthly off-peak MAE was 0.99 EUR/MWh. Weekly errors were larger, especially for peak hours, which makes sense because shorter delivery periods are more sensitive to weather and operational revisions.
 
-## What I Learned
-
-My conclusion is that this market is not necessarily "stable" in the sense of having small price moves. The distribution has steep tails, including negative prices and scarcity-price spikes. But it is more physically anchored than assets that can reprice mainly from sentiment, headlines, or social media. Day-ahead power prices are strongly tied to observable fundamentals: load forecasts, renewable generation, plant availability, interconnector constraints, fuel costs, and carbon prices.
-
-Because of that, I found that data quality, timestamp alignment, market-calendar handling, and leakage control were as important as model complexity. A powerful model cannot fix a bad delivery calendar, a leaked actual-load feature, or a misaligned 15-minute source series. For this type of market, I would rather start with a clean feature pipeline and a defensible validation setup, then add model complexity only when walk-forward validation proves it adds value.
-
 ## References
 
 - [ENTSO-E Single Day-Ahead Coupling](https://www.entsoe.eu/network_codes/cacm/implementation/sdac/)
