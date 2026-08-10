@@ -36,4 +36,4 @@ My research has covered machine learning, non-stationary recommender systems, cl
 - *DoS-based Fake Task Injection for Disrupted Sensing*, AICCSA 2025
 - *Vault-PMS: A Vault-Based Password Management System*, IWCMC 2024
 
-I have also contributed to [Deep-ML](https://www.deep-ml.com/), a leetcode-style open-source repository of problems focused on linear algebra, machine learning, and deep learning.
+I have also contributed to [Deep-ML](https://www.deep-ml.com/), a LeetCode-style open-source repository of problems focused on linear algebra, machine learning, and deep learning.
