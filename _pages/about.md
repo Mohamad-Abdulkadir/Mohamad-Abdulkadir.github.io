@@ -2,7 +2,7 @@
 permalink: /
 title: "👋 Hello there, I'm Mohamad!"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -10,12 +10,12 @@ redirect_from:
 👨‍💻 I am a recent Computer Science graduate from the United Arab Emirates University, passionate about AI and machine learning.
 
 # 💻 Professional Experience
--   **ML Research Intern @ ADIA Lab** 
+-   **ML Research Intern @ ADIA Lab**
     *   Developed a transformer‐based encoder to predict in-hospital mortality from 48x76 multivariate EHR time-series data, achieving high AUROC and Recall.
     *   Implemented attention and gradient-based methods to track feature importance.
     *   Built a ground-truth report generation pipeline that converts raw EHR sequences into structured text summaries and curates them using an LLM.
     *   Working on fine-tuning an LLM for clinical report generation and exploring alignment approaches to ensure factual grounding and accuracy.
--   **AI Intern @ e&** 
+-   **AI Intern @ e&**
     *   Contributed to integrating an AI-powered content recommendation tool with the Starz On Business platform.
     *   Developed a bespoke chatbot for Starz On Business to automate tier-1 customer support cases using the platform's guides and FAQs.
 

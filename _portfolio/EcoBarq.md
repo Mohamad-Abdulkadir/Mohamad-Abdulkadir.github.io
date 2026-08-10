@@ -6,14 +6,14 @@ collection: portfolio
 
 ## About EcoBarq
 
-[EcoBarq](https://ecobarq.space) is a diverse and dynamic team of students from the United Arab Emirates University (UAEU) participating in the Shell Eco-marathon competition. Our team comprises 17 dedicated members from four distinct majors:
+[EcoBarq](https://github.com/Mohamad-Abdulkadir/Eco-Barq) is a diverse and dynamic team of students from the United Arab Emirates University (UAEU) participating in the Shell Eco-marathon competition. Our team comprises 17 dedicated members from four distinct majors:
 
 - Mechanical Engineering
 - Aerospace Engineering
 - Electrical Engineering
 - Computer Science
 
-[EcoBarq Car Design](/images/design.png)
+![EcoBarq car design](/images/design.png)
 
 ## Shell Eco-marathon Overview
 
@@ -32,4 +32,3 @@ As a Computer Science student on the EcoBarq team, my responsibilities include:
 4. Integrating sensors into a central platform for real-time car monitoring
 5. Programming the engine control unit to enhance efficiency
 6. Participating in the physical construction of the car
-
