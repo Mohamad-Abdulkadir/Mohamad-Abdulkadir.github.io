@@ -1,28 +1,39 @@
 ---
 permalink: /
-title: "👋 Hello there, I'm Mohamad!"
+title: "Mohamad's Portfolio"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-👨‍💻 I am a recent Computer Science graduate from the United Arab Emirates University, passionate about AI and machine learning.
+Computer Science graduate. Interested in machine learning, applied AI, and data engineering.
 
-# 💻 Professional Experience
--   **ML Research Intern @ ADIA Lab**
-    *   Developed a transformer‐based encoder to predict in-hospital mortality from 48x76 multivariate EHR time-series data, achieving high AUROC and Recall.
-    *   Implemented attention and gradient-based methods to track feature importance.
-    *   Built a ground-truth report generation pipeline that converts raw EHR sequences into structured text summaries and curates them using an LLM.
-    *   Working on fine-tuning an LLM for clinical report generation and exploring alignment approaches to ensure factual grounding and accuracy.
--   **AI Intern @ e&**
-    *   Contributed to integrating an AI-powered content recommendation tool with the Starz On Business platform.
-    *   Developed a bespoke chatbot for Starz On Business to automate tier-1 customer support cases using the platform's guides and FAQs.
+I work across the AI and data lifecycle, from preparing and transforming data to developing, evaluating, and integrating machine learning models. My experience includes retrieval systems, forecasting pipelines, and cloud-based data workflows, as well as the APIs and software needed to turn them into practical products. My experience spans applied AI at e&, machine learning research at ADIA Lab and the ATRC STEM Youth Mentorship program, and platform development at Mansoura.
 
-# 👨‍🔬 Research Projects
-- **United Arab Emirates University - SURE+ Grant**: Researched the use of artificial intelligence in task classification and allocation in mobile crowdsensing platforms. Developed techniques to generate synthetic training data for task classifiers and a fake task detection mechanism that involves a combination of machine learning models and filtering algorithms.
-- **Advanced Technology Research Council - STEM Youth Mentorship Program**: Focused on non-stationary contextual-bandit algorithms and large language models (LLMs) for recommender systems. I worked on introducing change-point detectors to contextual bandit algorithms to enhance performance in stochastic environments and fine-tuning LLMs for recommendation tasks.
-- **United Arab Emirates University - SURE+ Grant**: Contributed to developing an adaptive educational chatbot powered by artificial intelligence, actively participating in all project phases.
+I hold a BSc in Computer Science from United Arab Emirates University, where I graduated with a 3.97/4.00 GPA.
 
-## 🤖 Open-Source Contributions
-I have contributed to [Deep-ML](https://www.deep-ml.com/), a leetcode-style open-source repository of problems focused on linear algebra, machine learning, and deep learning.
+[View projects](/portfolio/) | [Resume](/files/CV.pdf) | [GitHub](https://github.com/Mohamad-Abdulkadir) | [LinkedIn](https://www.linkedin.com/in/mohamad-abdulkadir-480696213/)
+
+## Experience
+
+**Mansoura | Software Engineer, Data & AI**  
+Built and launched a full-stack platform using React, TypeScript, AWS, PostgreSQL, and Snowflake. Implemented authentication, role-based access control, backend APIs, document workflows, scheduled cloud jobs, reporting automation, and KPI forecasting.
+
+**ADIA Lab | Machine Learning Research Intern**  
+Developed transformer and LLM pipelines from electronic health record data, covering mortality prediction, feature attribution, clinical report generation, and factual grounding.
+
+**e& | AI Intern**  
+Worked on integrating a content recommendation engine into Starz On Business and built a solution to automate tier-one customer support cases using product guides and FAQs.
+
+**ATRC STEM Youth Mentorship Program | Research Assistant**  
+Researched non-stationary contextual bandits and LLM-based recommender systems, including change-point detection for stochastic environments.
+
+## Research and Open Source
+
+My research has covered machine learning, non-stationary recommender systems, clinical AI, and mobile crowdsensing. Separately, I have co-authored two conference publications:
+
+- *DoS-based Fake Task Injection for Disrupted Sensing*, AICCSA 2025
+- *Vault-PMS: A Vault-Based Password Management System*, IWCMC 2024
+
+I have also contributed to [Deep-ML](https://www.deep-ml.com/), a leetcode-style open-source repository of problems focused on linear algebra, machine learning, and deep learning.
