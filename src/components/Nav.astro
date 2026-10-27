@@ -1,0 +1,293 @@
+---
+const links = [
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
+];
+---
+
+<header class="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-end px-4 pt-4 md:justify-center">
+  <!-- Desktop: centred pill with a highlight that glides to the hovered or current link -->
+  <nav
+    id="nav-pill"
+    aria-label="Primary"
+    class="nav-shell pointer-events-auto relative hidden items-center rounded-full p-1.5 md:flex"
+  >
+    <span id="nav-glow" aria-hidden="true" class="nav-glow absolute left-0 top-1.5 bottom-1.5 rounded-full"></span>
+    {
+      links.map((l) => (
+        <a href={l.href} data-nav-link class="nav-link relative z-10 rounded-full px-5 py-2 text-sm">
+          {l.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  <!-- Mobile: hamburger that unfolds into a rounded panel -->
+  <div class="pointer-events-auto relative md:hidden">
+    <button
+      id="nav-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="nav-panel"
+      class="nav-shell burger grid size-12 place-items-center rounded-full"
+    >
+      <span class="burger-lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav
+      id="nav-panel"
+      aria-label="Primary"
+      class="nav-shell nav-panel absolute right-0 top-[calc(100%+0.5rem)] w-[min(15rem,calc(100vw-2rem))] rounded-3xl p-2"
+      inert
+    >
+      {
+        links.map((l, i) => (
+          <a
+            href={l.href}
+            data-nav-link
+            class="nav-panel-link flex items-center justify-between rounded-2xl px-4 py-3.5 text-[15px]"
+            style={`--i:${i}`}
+          >
+            {l.label}
+            <span aria-hidden="true" class="text-muted">→</span>
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav-shell {
+    background: color-mix(in srgb, var(--color-surface) 72%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color-line) 80%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    box-shadow:
+      0 10px 30px -12px rgb(0 0 0 / 0.55),
+      inset 0 1px 0 rgb(255 255 255 / 0.04);
+    transition:
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  :global(html.scrolled) .nav-shell {
+    background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+    box-shadow:
+      0 14px 40px -14px rgb(0 0 0 / 0.75),
+      inset 0 1px 0 rgb(255 255 255 / 0.05);
+  }
+
+  .nav-link {
+    color: var(--color-muted);
+    transition: color 0.25s ease;
+  }
+  .nav-link:hover,
+  .nav-link.is-current,
+  .nav-link:focus-visible {
+    color: var(--color-fg);
+  }
+  .nav-link:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .nav-glow {
+    width: 0;
+    opacity: 0;
+    background: color-mix(in srgb, var(--color-fg) 9%, transparent);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+    transition:
+      transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.25s ease;
+  }
+
+  .burger {
+    transition:
+      transform 0.2s ease,
+      background-color 0.3s ease;
+  }
+  .burger:active {
+    transform: scale(0.94);
+  }
+  .burger-lines {
+    position: relative;
+    width: 18px;
+    height: 10px;
+  }
+  .burger-lines i {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 2px;
+    background: var(--color-fg);
+    transition:
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      top 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .burger-lines i:first-child {
+    top: 0;
+  }
+  .burger-lines i:last-child {
+    top: calc(100% - 1.5px);
+  }
+  .burger[aria-expanded='true'] .burger-lines i {
+    top: calc(50% - 0.75px);
+  }
+  .burger[aria-expanded='true'] .burger-lines i:first-child {
+    transform: rotate(45deg);
+  }
+  .burger[aria-expanded='true'] .burger-lines i:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .nav-panel {
+    background: color-mix(in srgb, var(--color-surface) 94%, transparent);
+    transform-origin: top right;
+    opacity: 0;
+    transform: translateY(-6px) scale(0.92);
+    visibility: hidden;
+    transition:
+      opacity 0.25s ease,
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s linear 0.4s;
+  }
+  .nav-panel.is-open {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition:
+      opacity 0.25s ease,
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s;
+  }
+  .nav-panel-link {
+    color: var(--color-fg);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+      background-color 0.2s ease,
+      opacity 0.3s ease,
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-panel.is-open .nav-panel-link {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0s, calc(60ms + var(--i) * 45ms), calc(60ms + var(--i) * 45ms);
+  }
+  .nav-panel-link:hover,
+  .nav-panel-link.is-current {
+    background: color-mix(in srgb, var(--color-fg) 8%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-glow,
+    .nav-panel,
+    .nav-panel-link,
+    .burger-lines i {
+      transition: none !important;
+    }
+  }
+</style>
+
+<script>
+  const pill = document.getElementById('nav-pill')!;
+  const glow = document.getElementById('nav-glow')!;
+  const pillLinks = [...pill.querySelectorAll<HTMLAnchorElement>('[data-nav-link]')];
+  const allLinks = [...document.querySelectorAll<HTMLAnchorElement>('[data-nav-link]')];
+  const toggle = document.getElementById('nav-toggle')!;
+  const panel = document.getElementById('nav-panel')!;
+
+  let current: string | null = null;
+  let hovered: HTMLAnchorElement | null = null;
+
+  function placeGlow() {
+    const target = hovered ?? pillLinks.find((a) => a.hash === current) ?? null;
+    if (!target) {
+      glow.style.opacity = '0';
+      return;
+    }
+    glow.style.width = `${target.offsetWidth}px`;
+    glow.style.transform = `translateX(${target.offsetLeft}px)`;
+    glow.style.opacity = '1';
+  }
+
+  pillLinks.forEach((a) => {
+    a.addEventListener('pointerenter', () => {
+      hovered = a;
+      placeGlow();
+    });
+    a.addEventListener('focus', () => {
+      hovered = a;
+      placeGlow();
+    });
+    a.addEventListener('blur', () => {
+      hovered = null;
+      placeGlow();
+    });
+  });
+  pill.addEventListener('pointerleave', () => {
+    hovered = null;
+    placeGlow();
+  });
+
+  // Track which section is under the middle of the viewport
+  const sections = allLinks
+    .map((a) => a.hash)
+    .filter((h, i, arr) => arr.indexOf(h) === i)
+    .map((h) => document.querySelector<HTMLElement>(h))
+    .filter((el): el is HTMLElement => !!el);
+
+  function updateCurrent() {
+    const mid = window.innerHeight * 0.45;
+    let next: string | null = null;
+    for (const s of sections) {
+      const r = s.getBoundingClientRect();
+      if (r.top <= mid && r.bottom > mid) next = `#${s.id}`;
+    }
+    // The contact section is short, so treat the bottom of the page as contact
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) next = '#contact';
+    document.documentElement.classList.toggle('scrolled', window.scrollY > 8);
+    if (next === current) return;
+    current = next;
+    allLinks.forEach((a) => a.classList.toggle('is-current', a.hash === current));
+    placeGlow();
+  }
+
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        updateCurrent();
+      });
+    },
+    { passive: true },
+  );
+  window.addEventListener('resize', placeGlow);
+  document.fonts?.ready.then(placeGlow);
+  updateCurrent();
+
+  // Mobile menu
+  function setOpen(open: boolean) {
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    panel.classList.toggle('is-open', open);
+    panel.toggleAttribute('inert', !open);
+  }
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('pointerdown', (e) => {
+    if (!panel.contains(e.target as Node) && !toggle.contains(e.target as Node)) setOpen(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setOpen(false);
+  });
+  window.matchMedia('(min-width: 768px)').addEventListener('change', () => setOpen(false));
+</script>

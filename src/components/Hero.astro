@@ -1,0 +1,21 @@
+---
+import { site } from '../data/site';
+---
+
+<header id="top" class="page shell items-center text-center">
+  <h1
+    class="rise font-serif font-medium leading-[0.92] tracking-[-0.03em] text-[clamp(3.6rem,12vw,9.5rem)]"
+    style="--i:0"
+  >
+    {site.name.split(' ')[0]}<br />{site.name.split(' ').slice(1).join(' ')}
+  </h1>
+  <a
+    href={site.resume}
+    target="_blank"
+    rel="noopener"
+    class="rise mt-10 inline-flex items-center gap-2 rounded-full bg-fg px-6 py-3.5 text-[15px] font-medium text-bg transition-transform hover:-translate-y-px sm:mt-12"
+    style="--i:1"
+  >
+    View résumé <span aria-hidden="true">↗</span>
+  </a>
+</header>
